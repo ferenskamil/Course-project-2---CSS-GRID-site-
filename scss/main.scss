@@ -3,7 +3,7 @@
 // font-family: 'Raleway', sans-serif;
 
 @use './colors' as c;
-@use './animations' as a;
+@use './animations';
 @use './hamburgers';
 
 @use './large';
@@ -181,32 +181,6 @@ a {
 		&:hover {
 			color: c.$gold;
 		}
-
-		&::before {
-			position: absolute;
-			top: 0;
-			left: 0;
-			content: '';
-			height: 100%;
-			width: 100%;
-			border: 1px solid c.$gold;
-			opacity: 0;
-
-			&:hover::before {
-				animation: pulse 1s;
-			}
-		}
-	}
-}
-
-@keyframes rotate-right {
-	0% {
-	}
-
-	50% {
-	}
-
-	100% {
 	}
 }
 
@@ -268,7 +242,7 @@ a {
 			left: 35%;
 			bottom: 8em;
 			width: 5%;
-			animation: rotate-right 55s infinite linear;
+			animation: rotate-left 55s infinite linear;
 		}
 	}
 
@@ -284,6 +258,21 @@ a {
 
 		&-link {
 			color: c.$white;
+
+			&::before {
+				position: absolute;
+				top: 0;
+				left: 0;
+				content: '';
+				height: 100%;
+				width: 100%;
+				border: 1px solid c.$gold;
+				opacity: 0;
+			}
+
+			&:hover::before {
+				animation: pulse 1s;
+			}
 		}
 	}
 
