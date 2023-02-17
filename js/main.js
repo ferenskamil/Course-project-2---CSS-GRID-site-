@@ -12,7 +12,6 @@ const showHideNav = () => {
 };
 
 const changeBurgerIcon = () => {
-	console.log('test');
 	BURGER_BTN.classList.toggle('is-active');
 };
 
