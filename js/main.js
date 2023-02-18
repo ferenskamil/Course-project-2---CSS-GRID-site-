@@ -3,6 +3,7 @@ const BURGER_BTN = document.querySelector('.hamburger');
 // const BURGER_BARS_ARR = document.querySelectorAll('')
 
 const NAV = document.querySelector('.nav');
+const NAV_ITEMS = document.querySelectorAll('.nav-mobile .nav-link');
 const FOOTER_YEAR_SPAN = document.querySelector('.footer__year');
 
 // FUNCTIONS
@@ -31,4 +32,7 @@ const updateFooterYear = () => {
 
 // EVENTS
 BURGER_BTN.addEventListener('click', showHideNav);
+NAV_ITEMS.forEach((item) => {
+	item.addEventListener('click', showHideNav);
+});
 updateFooterYear();
