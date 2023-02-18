@@ -3,7 +3,7 @@ const BURGER_BTN = document.querySelector('.hamburger');
 // const BURGER_BARS_ARR = document.querySelectorAll('')
 
 const NAV = document.querySelector('.nav');
-const NAV_ITEMS = document.querySelectorAll('.nav-mobile .nav-link');
+const NAV_ITEMS_MOBILE = document.querySelectorAll('.nav-mobile .nav-link');
 const FOOTER_YEAR_SPAN = document.querySelector('.footer__year');
 
 // FUNCTIONS
