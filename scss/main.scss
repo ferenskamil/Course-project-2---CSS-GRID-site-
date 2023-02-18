@@ -182,6 +182,7 @@ textarea {
 
 		&--active {
 			transform: translateX(0);
+			position: fixed;
 		}
 	}
 

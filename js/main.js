@@ -8,6 +8,14 @@ const FOOTER_YEAR_SPAN = document.querySelector('.footer__year');
 // FUNCTIONS
 const showHideNav = () => {
 	NAV.classList.toggle('nav-mobile--active');
+	// BURGER_BTN.style.position = 'fixed';
+
+	if (BURGER_BTN.style.position !== 'fixed') {
+		BURGER_BTN.style.position = 'fixed';
+	} else {
+		BURGER_BTN.style.position = 'absolute';
+	}
+
 	changeBurgerIcon();
 };
 

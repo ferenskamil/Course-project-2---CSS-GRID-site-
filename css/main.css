@@ -285,6 +285,7 @@ textarea {
 }
 .nav-mobile--active {
   transform: translateX(0);
+  position: fixed;
 }
 .nav-desktop {
   display: none;
