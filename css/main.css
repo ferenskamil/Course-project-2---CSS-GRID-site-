@@ -472,6 +472,21 @@ textarea {
   background-color: #d6c78e;
 }
 
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+}
+.gallery__img {
+  height: 300px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.gallery__img:nth-child(odd) {
+  display: none;
+}
+
 @media (min-width: 576px) {
   .info {
     display: grid;
@@ -570,6 +585,15 @@ textarea {
   .newsletter__form-input {
     margin-bottom: 0;
   }
+  .gallery {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .gallery__img {
+    display: block;
+  }
+  .gallery__img:nth-child(odd) {
+    display: block;
+  }
 }
 @media (min-width: 992px) {
   .company-name {
@@ -664,5 +688,8 @@ textarea {
 @media (min-width: 1200px) {
   .header__text p {
     font-size: 2.2rem;
+  }
+  .gallery {
+    grid-template-columns: repeat(8, 1fr);
   }
 }/*# sourceMappingURL=main.css.map */
